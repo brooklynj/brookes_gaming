@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Reset Style */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro {
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(/img/logo.png) no-repeat 50% 50%;
+}
+
+.intro .inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+}
+
+.content {
+  font-family: 'Raleway', sans-serif;
+  max-width: 900px;
+  height: 0 auto;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10% 0;
+  padding: 30px 0;
+}
+
+.content h1 {
+  color: #c0cfff;
+  font-size: 6rem;
+  line-height: 1.8rem;
+  padding: 40px;
+}
+
+.bounce-in {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 400ms;
+  animation-delay: 1.5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+span:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+span:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+span:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translate3d(0, 0, 0);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0);
+  }
+}
+
+.content h2 {
+  font-family: cursive;
+  font-size: 3rem;
+  color: #fff;
+  line-height: 1.5rem;
+  padding: 20px;
+/* Animation */
+position: relative;
+animation-name: slide-right;
+animation-duration: 3s;
+animation-delay: 3s;
+animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+0% {
+  opacity: 1;
+  left: -1000px;
+}
+
+100% {
+  opacity: 1;
+  left: 0px;
+}
+}
+
+.content p {
+  font-size: 1.5rem;
+  color: #5DBCD2;
+  padding: 20px;
+}
+
+.fa-heart {
+  font-size: 2rem;
+  color: #ff5db1;
+}
+
+.content .intro-btn {
+  border: solid #fff 3px;
+  border-radius: 9px;
+  height: 300px;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 135%;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.content .intro-btn:hover {
+  color: #ff5db1;
+  border: solid #ff5db1 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+
+  .content h2 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 2rem;
+  }
+
+  .bounce-in {
+    opacity: 1;
+    animation-name: none;
+  }
+
+  .btn {
+    font-size: 2rem;
+    padding: 7px 15px;
+  }
+
+  .body p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.8rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+
+  .bounce-in {
+    opacity: 1;
+    animation-name: none;
+  }
+
+  .content .btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+
+  .body p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}

@@ -1,0 +1,54 @@
+/* CSS Variables */
+:root {
+	--primary: #ff80ab;
+	--p-light: #ffb2dd;
+	--p-dark: #c94f7c;
+	--secondary: #8c9eff;
+	--s-light: #c0cfff;
+	--s-dark: #5870cb;
+	--black: #000000;
+	--white: #ffffff;
+	--shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.form-radio {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	position: relative;
+	background-color: #f1f1f1;
+	color: var(--black);
+	top: 5px;
+	height: 30px;
+	width: 30px;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-right: 7px;
+	outline: none;
+}
+
+.form-radio:checked::before {
+	position: absolute;
+	font: 13px/1 'Open Sans', sans-serif;
+	left: 11px;
+	top: 7px;
+	content: '\02143';
+	transform: rotate(40deg);
+}
+
+.form-radio:hover {
+	background-color: var(--s-light);
+}
+
+.form-radio:checked {
+	background-color: var(--secondary);
+}
+
+label {
+	font-size: 30px;
+	color: var(--p-dark);
+	cursor: pointer;
+	padding-right: 10px;
+}

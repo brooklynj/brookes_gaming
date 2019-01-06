@@ -1,0 +1,114 @@
+<section id="wheel">
+	<h2 id="name">Hi
+		<%= name %>!</h2>
+	<div id="canvas">
+		<div id="chart"></div>
+	</div>
+</section>
+<div id="game1">
+	<div class="jumbotron" id="game1Header">
+		<h1>How long can you stay alive?<br></h1>
+		<h4>Use the ACCELERATE button to stay in the air</h4>
+		<div class="play" id="clickMe1">
+			<button class="row btn btn-primary" onclick="startGame()">Start Game</button>
+		</div>
+	</div>
+	<div class="play">
+		<h1 id="scoreHeader1">Score: <span id="score1">0</span></h1>
+	</div>
+	<div id="divControls"></div>
+	<div id="divGameStage1"></div>
+	<div class="play">
+		<button class="btn btn-primary" id="controller" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+	</div>
+	<div class="game-over" id="gameOver1">
+		<div class="spin">
+			<button class="btn btn-success" id="btnGame1" onclick="closeGame1()">Spin Again</button>
+		</div>
+	</div>
+</div>
+<div id="game2">
+	<div class="jumbotron" id="game2Header">
+		<h1>The Great RGB
+			<br>
+			Guessing Game</h1>
+		<h4>Match the Correct RGB Color</h4>
+		<div class="play" id="clickMe2">
+			<button class="row btn btn-primary" onclick="startGame2()">Start Game</button>
+		</div>
+	</div>
+	<div class="play">
+		<h1 id="scoreHeader2">Score: <span id="score2">600</span></h1>
+	</div>
+	<div class="play">
+		<span id="colorDisplay"></span>
+	</div>
+	<div class="btn-group" role="group">
+		<button class="btn btn-primary btnGame2" id="reset">New Colors</button>
+		<button class="mode easy btn btn-primary btnGame2">Easy</button>
+		<button class="mode hard btn btn-primary btnGame2">Hard</button>
+	</div>
+	<div>
+		<span id="message"></span>
+	</div>
+	<div id="divGameStage2">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+	<div class="game-over" id="gameOver2">
+		<div class="spin">
+			<button class="btn btn-success" id="btnGame2" onclick="closeGame2()">Spin Again</button>
+		</div>
+	</div>
+</div>
+<div id="game3">
+	<div class="jumbotron" id="game3Header">
+		<h1>BreakOut</h1>
+		<div class="play" id="clickMe3">
+			<button class="row btn btn-primary" onclick="startGame3()">Start Game</button>
+		</div>
+	</div>
+	<div class="play">
+		<h1 id="scoreHeader3">Score: <span id="score3">0</span> Lives: <span id="lives3">0</span></h1>
+	</div>
+	<div id="divGameStage3">
+		<canvas id="canvas3" width="480" height="320"></canvas>
+	</div>
+	<div class="game-over" id="gameOver3">
+		<div class="spin">
+			<button class="btn btn-success" id="btnGame3" onclick="closeGame3()">Spin Again</button>
+		</div>
+	</div>
+</div>
+<div id="game4">
+	<div class="jumbotron" id="game4Header">
+		<h1>Protect the Village
+			<br>
+			From Falling Popcicles
+		</h1>
+		<div class="play" id="clickMe4">
+			<button class="row btn btn-primary" onclick="startGame4()">Start Game</button>
+		</div>
+	</div>
+
+	<div class="play">
+		<h1 id="scoreHeader4">Score: <span id="score4">0</span></h1>
+	</div>
+	<div id="divGameStage4">
+		<div class="BlocksGame"></div>
+	</div>
+	<div class="game-over" id="gameOver4">
+		<div class="spin">
+			<button class="btn btn-success" id="btnGame4" onclick="closeGame4()">Spin Again</button>
+		</div>
+	</div>
+</div>
+<div class="game-over" id="gameOver">
+	<div class="spin">
+		<button class="btn btn-success" id="btnGameOver" onclick="restart()">Play Again</button>
+	</div>
+</div>

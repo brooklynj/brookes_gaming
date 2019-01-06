@@ -1,0 +1,38 @@
+{
+  "name": "brookes_gaming",
+  "version": "1.0.0",
+  "description": "15 random mini games",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js"
+  },
+  "author": "Brooklyn J.",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "d3-selection": "^1.3.2",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "favicon": "0.0.2",
+    "mongoose": "^5.4.2",
+    "npm": "^6.4.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brooklynj/brookes_gaming.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brooklynj/brookes_gaming/issues"
+  },
+  "homepage": "https://github.com/brooklynj/brookes_gaming#readme"
+}
